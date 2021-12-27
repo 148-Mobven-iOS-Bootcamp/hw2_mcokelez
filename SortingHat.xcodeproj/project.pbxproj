@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		5C5B3749277A0C4800192A1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B3748277A0C4800192A1A /* AppDelegate.swift */; };
 		5C5B374B277A0C4800192A1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B374A277A0C4800192A1A /* SceneDelegate.swift */; };
-		5C5B374D277A0C4800192A1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B374C277A0C4800192A1A /* ViewController.swift */; };
 		5C5B3750277A0C4800192A1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C5B374E277A0C4800192A1A /* Main.storyboard */; };
 		5C5B3752277A0C5200192A1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C5B3751277A0C5200192A1A /* Assets.xcassets */; };
 		5C5B3755277A0C5200192A1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C5B3753277A0C5200192A1A /* LaunchScreen.storyboard */; };
+		5C5B375F277A0C8200192A1A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B375E277A0C8200192A1A /* WelcomeViewController.swift */; };
+		5C5B3762277A0C9100192A1A /* SortingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5B3761277A0C9100192A1A /* SortingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5C5B3745277A0C4800192A1A /* SortingHat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SortingHat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C5B3748277A0C4800192A1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C5B374A277A0C4800192A1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5C5B374C277A0C4800192A1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5C5B374F277A0C4800192A1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C5B3751277A0C5200192A1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C5B3754277A0C5200192A1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C5B3756277A0C5200192A1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C5B375E277A0C8200192A1A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		5C5B3761277A0C9100192A1A /* SortingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				5C5B3748277A0C4800192A1A /* AppDelegate.swift */,
 				5C5B374A277A0C4800192A1A /* SceneDelegate.swift */,
-				5C5B374C277A0C4800192A1A /* ViewController.swift */,
 				5C5B374E277A0C4800192A1A /* Main.storyboard */,
 				5C5B3751277A0C5200192A1A /* Assets.xcassets */,
 				5C5B3753277A0C5200192A1A /* LaunchScreen.storyboard */,
 				5C5B3756277A0C5200192A1A /* Info.plist */,
+				5C5B375E277A0C8200192A1A /* WelcomeViewController.swift */,
+				5C5B3761277A0C9100192A1A /* SortingViewController.swift */,
 			);
 			path = SortingHat;
 			sourceTree = "<group>";
@@ -137,9 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C5B374D277A0C4800192A1A /* ViewController.swift in Sources */,
+				5C5B375F277A0C8200192A1A /* WelcomeViewController.swift in Sources */,
 				5C5B3749277A0C4800192A1A /* AppDelegate.swift in Sources */,
 				5C5B374B277A0C4800192A1A /* SceneDelegate.swift in Sources */,
+				5C5B3762277A0C9100192A1A /* SortingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

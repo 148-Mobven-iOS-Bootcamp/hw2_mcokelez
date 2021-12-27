@@ -1,24 +1,184 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AC4-v5-t9U">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Welcome View Controller-->
+        <scene sceneID="Oz0-Uf-AI1">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="AC4-v5-t9U" customClass="WelcomeViewController" customModule="SortingHat" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4mF-kd-Ufm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hogwarts_houses" translatesAutoresizingMaskIntoConstraints="NO" id="1nI-nT-x7a">
+                                <rect key="frame" x="51" y="64" width="312" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="312" id="9dS-1m-COh"/>
+                                    <constraint firstAttribute="height" constant="290" id="vUK-sB-ZXB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihg-e4-Uzs">
+                                <rect key="frame" x="93" y="400" width="228" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="Jzf-eb-cQw"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Let the sorting hat put you in your new house, please tap the sorting hat  ">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="BradleyHandITCTT-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFn-sg-ScR">
+                                <rect key="frame" x="35" y="362" width="344" height="30"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Welcome to Hogwarts ">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="BradleyHandITCTT-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rzs-Up-0oa">
+                                <rect key="frame" x="93" y="487" width="228" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="qMf-lS-zhL"/>
+                                </constraints>
+                                <attributedString key="attributedText"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3O-X8-19R">
+                                <rect key="frame" x="156" y="579" width="102" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="102" id="NAv-8j-46u"/>
+                                    <constraint firstAttribute="height" constant="115" id="Z9J-xh-Jsj"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="sorting_hat">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="showSortingVCTapped:" destination="AC4-v5-t9U" eventType="touchUpInside" id="Vox-XG-SWZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LGM-PO-mU3"/>
+                        <color key="backgroundColor" red="0.95863085989999997" green="0.96400851009999999" blue="0.87892049549999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LGM-PO-mU3" firstAttribute="trailing" secondItem="ihg-e4-Uzs" secondAttribute="trailing" constant="93" id="2df-wg-aCr"/>
+                            <constraint firstItem="s3O-X8-19R" firstAttribute="leading" secondItem="LGM-PO-mU3" secondAttribute="leading" constant="156" id="2qM-2L-XDL"/>
+                            <constraint firstItem="s3O-X8-19R" firstAttribute="top" secondItem="Rzs-Up-0oa" secondAttribute="bottom" constant="34" id="50v-Ft-HEU"/>
+                            <constraint firstItem="s3O-X8-19R" firstAttribute="top" secondItem="Rzs-Up-0oa" secondAttribute="bottom" constant="34" id="Bs0-Wz-CXP"/>
+                            <constraint firstItem="Rzs-Up-0oa" firstAttribute="leading" secondItem="LGM-PO-mU3" secondAttribute="leading" constant="93" id="DP2-qP-Nid"/>
+                            <constraint firstItem="WFn-sg-ScR" firstAttribute="leading" secondItem="LGM-PO-mU3" secondAttribute="leading" constant="35" id="DiQ-cJ-eLw"/>
+                            <constraint firstItem="LGM-PO-mU3" firstAttribute="trailing" secondItem="Rzs-Up-0oa" secondAttribute="trailing" constant="93" id="G8U-9e-8VW"/>
+                            <constraint firstItem="LGM-PO-mU3" firstAttribute="trailing" secondItem="s3O-X8-19R" secondAttribute="trailing" constant="156" id="H9M-Ep-JvF"/>
+                            <constraint firstItem="Rzs-Up-0oa" firstAttribute="top" secondItem="ihg-e4-Uzs" secondAttribute="bottom" constant="3" id="MHl-vs-5HN"/>
+                            <constraint firstItem="ihg-e4-Uzs" firstAttribute="top" secondItem="WFn-sg-ScR" secondAttribute="bottom" constant="8" symbolic="YES" id="Ov2-jw-q25"/>
+                            <constraint firstItem="1nI-nT-x7a" firstAttribute="leading" secondItem="LGM-PO-mU3" secondAttribute="leading" constant="51" id="QsQ-5f-FO2"/>
+                            <constraint firstItem="ihg-e4-Uzs" firstAttribute="top" secondItem="WFn-sg-ScR" secondAttribute="bottom" constant="8" symbolic="YES" id="TsM-uT-Z1z"/>
+                            <constraint firstItem="ihg-e4-Uzs" firstAttribute="leading" secondItem="LGM-PO-mU3" secondAttribute="leading" constant="93" id="Y3v-XT-i2J"/>
+                            <constraint firstItem="LGM-PO-mU3" firstAttribute="trailing" secondItem="WFn-sg-ScR" secondAttribute="trailing" constant="35" id="Zvb-sY-tgy"/>
+                            <constraint firstItem="ihg-e4-Uzs" firstAttribute="top" secondItem="WFn-sg-ScR" secondAttribute="bottom" constant="8" symbolic="YES" id="f9z-EB-TDd"/>
+                            <constraint firstItem="LGM-PO-mU3" firstAttribute="trailing" secondItem="1nI-nT-x7a" secondAttribute="trailing" constant="51" id="j1r-Lp-ncq"/>
+                            <constraint firstItem="WFn-sg-ScR" firstAttribute="top" secondItem="1nI-nT-x7a" secondAttribute="bottom" constant="8" symbolic="YES" id="mzO-gC-8GX"/>
+                            <constraint firstItem="1nI-nT-x7a" firstAttribute="top" secondItem="LGM-PO-mU3" secondAttribute="top" constant="20" id="pHX-Mh-XqE"/>
+                            <constraint firstItem="ihg-e4-Uzs" firstAttribute="leading" secondItem="LGM-PO-mU3" secondAttribute="leading" constant="93" id="s1s-yG-RlW"/>
+                            <constraint firstItem="LGM-PO-mU3" firstAttribute="trailing" secondItem="ihg-e4-Uzs" secondAttribute="trailing" constant="93" id="zHb-mF-4uM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="houseImage" destination="1nI-nT-x7a" id="VQC-CT-qqs"/>
+                        <outlet property="nameLabel" destination="ihg-e4-Uzs" id="6Qj-q0-uv7"/>
+                        <outlet property="surnameLabel" destination="Rzs-Up-0oa" id="JMN-Xb-WYD"/>
+                        <outlet property="welcomeLabel" destination="WFn-sg-ScR" id="mos-Wa-SF5"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sUx-iG-rRa" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139.13043478260872" y="62.276785714285708"/>
+        </scene>
+        <!--Sorting View Controller-->
+        <scene sceneID="UvL-WN-xoa">
+            <objects>
+                <viewController storyboardIdentifier="sortingVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9hH-5K-785" customClass="SortingViewController" customModule="SortingHat" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pPp-uY-v75">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IMQ-tp-y0f">
+                                <rect key="frame" x="51" y="364" width="312" height="34"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hogwarts_houses" translatesAutoresizingMaskIntoConstraints="NO" id="U5S-Og-yBO">
+                                <rect key="frame" x="51" y="64" width="312" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="290" id="hrC-Z6-qif"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Surname" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jNK-bR-cYt">
+                                <rect key="frame" x="51" y="413" width="312" height="34"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Rk-SY-sz5">
+                                <rect key="frame" x="158" y="482" width="99" height="116"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="MaM-dX-4tg"/>
+                                    <constraint firstAttribute="width" constant="99" id="wVa-ZC-A3v"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="sorting_hat">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="showResult:" destination="9hH-5K-785" eventType="touchUpInside" id="aZU-QB-YDQ"/>
+                                    <action selector="sortingHatTapped:" destination="AC4-v5-t9U" eventType="touchUpInside" id="ouw-sH-lRt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6o9-Kb-gDl"/>
+                        <color key="backgroundColor" red="0.95863074059999998" green="0.96400839090000001" blue="0.87892037629999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jNK-bR-cYt" firstAttribute="top" secondItem="IMQ-tp-y0f" secondAttribute="bottom" constant="15" id="0Cu-S8-Yea"/>
+                            <constraint firstItem="jNK-bR-cYt" firstAttribute="leading" secondItem="6o9-Kb-gDl" secondAttribute="leading" constant="51" id="2da-jr-Sid"/>
+                            <constraint firstItem="6Rk-SY-sz5" firstAttribute="top" secondItem="jNK-bR-cYt" secondAttribute="bottom" constant="35" id="AZT-1W-ib7"/>
+                            <constraint firstItem="6o9-Kb-gDl" firstAttribute="trailing" secondItem="U5S-Og-yBO" secondAttribute="trailing" constant="51" id="BAf-ZY-Rrb"/>
+                            <constraint firstItem="6o9-Kb-gDl" firstAttribute="trailing" secondItem="jNK-bR-cYt" secondAttribute="trailing" constant="51" id="Fjp-yA-gCr"/>
+                            <constraint firstItem="IMQ-tp-y0f" firstAttribute="top" secondItem="U5S-Og-yBO" secondAttribute="bottom" constant="10" id="TH8-15-hhM"/>
+                            <constraint firstItem="U5S-Og-yBO" firstAttribute="leading" secondItem="6o9-Kb-gDl" secondAttribute="leading" constant="51" id="huU-hU-4fr"/>
+                            <constraint firstItem="6Rk-SY-sz5" firstAttribute="leading" secondItem="6o9-Kb-gDl" secondAttribute="leading" constant="158" id="kWg-rV-ew4"/>
+                            <constraint firstItem="IMQ-tp-y0f" firstAttribute="leading" secondItem="6o9-Kb-gDl" secondAttribute="leading" constant="51" id="lzz-vV-5DN"/>
+                            <constraint firstItem="U5S-Og-yBO" firstAttribute="top" secondItem="6o9-Kb-gDl" secondAttribute="top" constant="20" id="mKq-zI-wf0"/>
+                            <constraint firstItem="6o9-Kb-gDl" firstAttribute="trailing" secondItem="IMQ-tp-y0f" secondAttribute="trailing" constant="51" id="r7H-ML-mQ5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hR3-0y-cGo"/>
+                    <connections>
+                        <outlet property="nameText" destination="IMQ-tp-y0f" id="xLh-6Q-IW0"/>
+                        <outlet property="surnameText" destination="jNK-bR-cYt" id="u2L-a9-wXu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sN8-wE-cSh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949.27536231884062" y="61.607142857142854"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hogwarts_houses" width="524" height="408"/>
+        <image name="sorting_hat" width="422" height="512"/>
+    </resources>
 </document>
